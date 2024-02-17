@@ -14,10 +14,10 @@ import { z } from "zod";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Input } from "@/libs/components/Form/Input";
 import { Grid } from "@mui/material";
-import Button from "@/libs/components/Form/Button/Button";
 import { signIn } from "next-auth/react";
+import { Input } from "@/libs/components/Form";
+import Button from "@/libs/components/Form/Button/Button";
 
 interface SignIn {
   email: string;
